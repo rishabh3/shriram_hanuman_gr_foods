@@ -6,8 +6,8 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true, // required for static export
   },
-  basePath: "/your-repo-name", // replace with repo name
-  assetPrefix: "/your-repo-name/",
+  basePath: "/shriram_hanuman_gr_foods", // replace with repo name
+  assetPrefix: "/shriram_hanuman_gr_foods/",
 };
 
 export default nextConfig;
