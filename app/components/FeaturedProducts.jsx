@@ -47,7 +47,7 @@ export default function FeaturedProducts() {
               {/* Image */}
               <div className="relative w-full h-40">
                 <Image
-                  src={item.image}
+                  src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/${item.image}`}
                   alt={item.name}
                   fill
                   className="object-cover group-hover:scale-105 transition duration-300"

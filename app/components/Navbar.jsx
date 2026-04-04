@@ -21,7 +21,7 @@ export default function Navbar() {
         {/* Logo */}
         <div className="flex items-center space-x-2 cursor-pointer">
             <Image
-                src="/logo.jpg"
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/logo.jpg`}
                 alt="Company Logo"
                 width={60}
                 height={60}

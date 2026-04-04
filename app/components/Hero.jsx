@@ -34,7 +34,7 @@ export default function Hero() {
         {/* Right Image */}
         <div className="relative w-full h-[300px] md:h-[400px]">
           <Image
-            src="/masala.jpg"
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/masala.jpg`}
             alt="Masala"
             fill
             className="object-cover rounded-2xl shadow-lg brightness-90"
