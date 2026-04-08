@@ -2,8 +2,9 @@
 
 import Image from "next/image";
 import { scrollToSection } from "../utils/util";
+import { JSX } from "react";
 
-export default function Hero() {
+export default function Hero(): JSX.Element {
   return (
     <section id="home" className="bg-[#FAEDCD]">
       <div className="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center">

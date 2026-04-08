@@ -1,4 +1,6 @@
-export default function Footer() {
+import { JSX } from "react";
+
+export default function Footer(): JSX.Element {
   return (
     <footer className="bg-[#2D2D2D] text-gray-300 py-4 text-center text-sm">
       <p>

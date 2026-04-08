@@ -1,4 +1,6 @@
-export default function Contact() {
+import { JSX } from "react";
+
+export default function Contact(): JSX.Element {
   return (
     <section id="contact" className="bg-[#FAEDCD] py-16">
       <div className="max-w-7xl mx-auto px-6 text-center">

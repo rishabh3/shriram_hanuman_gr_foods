@@ -1,13 +1,17 @@
 "use client";
-import { useState } from "react";
+import { JSX, useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { scrollToSection } from "../utils/util";
 
-export default function Navbar() {
+type Item = {
+  name: string;
+  id: string;
+};
+
+export default function Navbar(): JSX.Element {
   const [isOpen, setIsOpen] = useState(false);
 
-   const navItems = [
+  const navItems: Item[] = [
     { name: "Home", id: "home" },
     { name: "Products", id: "products" },
     { name: "Categories", id: "categories" },

@@ -1,4 +1,4 @@
-export const scrollToSection = (id) => {
+export const scrollToSection = (id: string): undefined => {
   const element = document.getElementById(id);
 
   if (element) {

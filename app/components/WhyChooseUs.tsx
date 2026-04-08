@@ -1,4 +1,12 @@
-const features = [
+import { JSX } from "react";
+
+type Feature = {
+  title: string;
+  desc: string;
+  icon: string;
+};
+
+const features: Feature[] = [
   {
     title: "Premium Quality",
     desc: "We use the finest raw materials to ensure superior product quality.",
@@ -21,7 +29,7 @@ const features = [
   },
 ];
 
-export default function WhyChooseUs() {
+export default function WhyChooseUs(): JSX.Element {
   return (
     <section id="why" className="bg-[#FAEDCD] py-16">
       <div className="max-w-7xl mx-auto px-6">

@@ -1,6 +1,13 @@
 import Image from "next/image";
+import { JSX } from "react";
 
-const products = [
+type Product = {
+  name: string;
+  size: string;
+  image: string;
+};
+
+const products: Product[] = [
   {
     name: "Shudh Chakki Atta",
     size: "1kg / 5kg",
@@ -23,7 +30,7 @@ const products = [
   },
 ];
 
-export default function FeaturedProducts() {
+export default function FeaturedProducts(): JSX.Element {
   return (
     <section id="products" className="bg-white py-16">
       <div className="max-w-7xl mx-auto px-6">
@@ -66,13 +73,6 @@ export default function FeaturedProducts() {
             </div>
           ))}
         </div>
-
-        {/* CTA */}
-        {/* <div className="text-center mt-10">
-          <button className="bg-[#D4A373] text-white px-6 py-3 rounded-xl hover:bg-[#b08968] transition">
-            View All Products
-          </button>
-        </div> */}
       </div>
     </section>
   );

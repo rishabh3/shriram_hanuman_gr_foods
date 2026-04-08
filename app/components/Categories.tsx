@@ -1,6 +1,12 @@
 import Image from "next/image";
+import { JSX } from "react";
 
-const categories = [
+type Category = {
+  name: string;
+  image: string;
+};
+
+const categories: Category[] = [
   { name: "Atta", image: "/categories/atta.jpg" },
   { name: "Besan", image: "/categories/besanpowder.jpg" },
   { name: "Sattu", image: "/categories/sattu.jpg" },
@@ -9,7 +15,7 @@ const categories = [
   { name: "Oils", image: "/categories/oils.jpg" },
 ];
 
-export default function Categories() {
+export default function Categories(): JSX.Element {
   return (
     <section id="categories" className="bg-white py-16">
       <div className="max-w-7xl mx-auto px-6">
