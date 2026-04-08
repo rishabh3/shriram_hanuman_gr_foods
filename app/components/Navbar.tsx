@@ -1,7 +1,7 @@
 "use client";
 import { JSX, useState } from "react";
 import Image from "next/image";
-import { scrollToSection } from "../utils/util";
+import { scrollToSection, getImagePath } from "../utils/util";
 
 type Item = {
   name: string;
@@ -25,7 +25,7 @@ export default function Navbar(): JSX.Element {
         {/* Logo */}
         <div className="flex items-center space-x-2 cursor-pointer">
             <Image
-                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/logo.jpg`}
+                src={getImagePath("logo.jpg")}
                 alt="Company Logo"
                 width={60}
                 height={60}

@@ -11,3 +11,12 @@ export const scrollToSection = (id: string): undefined => {
     window.scrollTo({ top: y, behavior: "smooth" });
   }
 };
+
+export function getImagePath(filePath: string): string {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
+  const cleanBase = basePath.replace(/\/$/, "");   // remove trailing /
+  const cleanPath = filePath.replace(/^\/+/, "");  // remove leading /
+
+  return `${cleanBase}/${cleanPath}`;
+}

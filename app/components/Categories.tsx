@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { JSX } from "react";
+import { getImagePath } from "../utils/util";
 
 type Category = {
   name: string;
@@ -39,7 +40,7 @@ export default function Categories(): JSX.Element {
               {/* Image */}
               <div className="relative w-full h-70">
                 <Image
-                  src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/${item.image}`}
+                  src={getImagePath(item.image)}
                   alt={item.name}
                   fill
                   className="object-cover group-hover:scale-105 transition duration-300"
